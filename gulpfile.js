@@ -9,6 +9,18 @@ var PathTo = {
   PublicCssFiles : './public/css/*.css'
 };
 
+gulp.task('less', function() {
+    gulp.src('./less/*.less')
+        .pipe(plumber({
+            errorHandler: onError
+        }))
+        .pipe(less({
+            paths: [path.join(__dirname, 'less', 'includes')],
+            sourceMap: true
+        }))
+        .pipe(gulp.dest('./public/css/*.css'))
+});
+
 gulp.task('watch-files', function (){
   gulp.watch(PathTo.LessFiles, ['compile-less']);
   //gulp watch (path to css files)

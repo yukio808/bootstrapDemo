@@ -6529,3 +6529,125 @@ button.close {
     display: none !important;
   }
 }
+@media (max-width: 767px) {
+  body .paragraph {
+    visibility: hidden;
+  }
+  body .boeingSvg {
+    background-image: url("/images/boeing_logo.png");
+    background-repeat: none;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -12px;
+  }
+  body .form-group {
+    margin-right: -10px;
+  }
+  body div.row .thumbnail {
+    background-color: #bbbbbb;
+  }
+  body div.row .thumbnail img {
+    height: 200px;
+    width: 200px;
+    border: solid black 3px;
+  }
+  body div.row .thumbnail img:nth-child(1) {
+    background-color: white;
+  }
+}
+@media (min-width: 768px) {
+  body .boeingSvg {
+    background-image: url("/images/boeing_logo.png");
+    background-repeat: none;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -12px;
+  }
+  body .jumbotron {
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+  body .jumbotron p a {
+    background-color: #777777;
+    border: solid white 1px;
+  }
+  body .form-group {
+    margin-left: -21px;
+  }
+  body div.row .thumbnail {
+    background-color: #bbbbbb;
+    height: 400px;
+  }
+  body div.row .thumbnail img {
+    height: 200px;
+    width: 200px;
+    border: solid black 3px;
+  }
+  body div.row .thumbnail img:nth-child(1) {
+    background-color: white;
+  }
+}
+/* deprecated: @screen-tablet, or @screen-sm */
+@media (min-width: 992px) {
+  body {
+    min-width: none;
+  }
+  body a.navbar-brand {
+    display: inline-block;
+    padding: 0px;
+    margin-top: 13px;
+  }
+  body .boeingSvg {
+    background-image: url("/images/boeing_logo.png");
+    background-repeat: none;
+    background-size: contain;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: -12px;
+  }
+  body a span.paragraph {
+    display: inline-block;
+    line-height: 10px;
+  }
+  body .jumbotron {
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+  body .jumbotron p a {
+    background-color: #777777;
+    border: solid white 1px;
+  }
+  body .form-group {
+    text-align: right;
+  }
+  body div.main-cnt .bgimg {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('/images/Cloud.jpg');
+    background-size: 100% 80%;
+    background-repeat: no-repeat;
+    height: 600px;
+    width: 100%;
+    max-width: 1200px;
+    border-radius: 6px;
+  }
+  body div.row .thumbnail {
+    background-color: #bbbbbb;
+    height: 400px;
+  }
+  body div.row .thumbnail img {
+    height: 200px;
+    width: 200px;
+    border: solid black 3px;
+  }
+  body div.row .thumbnail img:nth-child(1) {
+    background-color: white;
+  }
+}
+/* deprecated: @screen-lg-desktop, or @screen-lg */

@@ -3,18 +3,110 @@
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 </head>
 <body>
+    
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><span class="boeingSvg"></span><span class="paragraph">World Investors Inc</span></a>
+        </div>
 
-<div class="container-fluid">
-  <h1>My First Bootstrap Page</h1>
-  <p>This is some text.</p> 
-</div>
-
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <!-- <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li> -->
+           <!--  <li><a href="#">Link</a></li> -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">FAQ<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Legal</a></li>
+                <li><a href="#">Company Affiliates</a></li>
+                <li><a href="#">Locations</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Private Investors</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Government Investors</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Welcome to WII</h1>
+      <h2>Here we bring "YOU" the worlds most professional Investors and Affiliates for you Financial dreams</h2>
+      <p><a href="#" class="btn btn-primary">See More</a></p> 
+    </div>
+    <div class="main-cnt">
+      <div class="bgimg">
+      </div>
+    </div>
+    <div class="row">
+      <h3>Meet The Investors Online Now</h3>
+      <div class="col-lg-4 col-md-4 col-xs-12">
+        <div class="thumbnail">
+          <img src="/images/finn-adventure-time-tuxedo.png">
+          <div class="caption">
+            <h3>Finn The Human</h3>
+            <p class="description">Not much is known about him other than the fact he came from another world and likes swords.<br></p>
+            <p><a href="#" class="btn btn-primary" role="button">Contact</a> <a  href="#" class="btn btn-default" role="button">Find Out More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12">
+        <div class="thumbnail">
+          <img src="/images/frank.jpg">
+          <div class="caption">
+            <h3>Frank the Pug</h3>
+            <p class="description">Meet Frank, You're not so average pug Who is nationaly recognised for his succcesful buissness as a Entrepreneur and Investor</p>
+            <p><a href="#" class="btn btn-primary" role="button">Contact</a> <a  href="#" class="btn btn-default" role="button">Find Out More</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-xs-12">
+        <div class="thumbnail">
+          <img src="/images/IMG_2298.jpg">
+          <div class="caption">
+            <h3>Yukio Yamamoto</h3>
+            <p class="description">Long time Investor for jesterof.io Mr.Yamamoto is a internationaly recognised for his tenacity and...</p>
+            <p><a href="#" class="btn btn-primary" role="button">Contact</a> <a  href="#" class="btn btn-default" role="button">Find Out More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 </div>

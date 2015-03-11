@@ -6529,9 +6529,88 @@ button.close {
     display: none !important;
   }
 }
+body {
+  background-color: #cccda2;
+}
+body .navbar-default {
+  border-color: #544D4D;
+}
+body .navbar-default .navbar-form {
+  border-color: #544D4D;
+}
+body .navbar-default .navbar-nav > .open > a {
+  border-radius: 0px;
+}
+body .navbar-default .navbar-collapse {
+  border-color: #544D4D;
+}
+body .navbar-default .navbar-toggle {
+  border-color: #544D4D;
+}
+body .navbar-default .navbar-toggle:hover,
+body .navbar-default .navbar-toggle:focus {
+  background-color: #9a8d7c;
+}
+body .navbar-default .navbar-toggle .icon-bar {
+  background-color: #effacb;
+}
+body .navbar-default .navbar-nav > .open > a,
+body .navbar-default .navbar-nav > .open > a:hover,
+body .navbar-default .navbar-nav > .open > a:focus {
+  background-color: #9a8d7c;
+  color: #555555;
+}
+body nav.navbar {
+  background-color: #766a5b;
+}
+body nav.navbar a {
+  border-radius: 6px;
+}
+body nav.navbar a span {
+  color: #effacb;
+}
+body nav.navbar ul.nav li .dropdown-menu {
+  background-color: #766a5b;
+}
+body nav.navbar ul.nav li .divider {
+  background-color: #766a5b;
+  margin: 0px;
+}
+body nav.navbar ul.nav li a {
+  background-color: #766a5b;
+  color: #effacb;
+}
+body .footer {
+  background-color: #766a5b;
+}
+body .footer ul {
+  margin: 0px;
+  background-color: #766a5b;
+}
+body .footer ul li {
+  display: inline-block;
+}
+body .footer ul li a {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: white;
+  font-weight: bolder;
+}
+body div.row .thumbnail {
+  border: solid #766a5b 2px;
+}
+body div.row .thumbnail p a {
+  background-color: #9acab0;
+  border: solid #9acab0 2px;
+  color: black;
+}
 @media (max-width: 767px) {
   body .paragraph {
     visibility: hidden;
+  }
+  body .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #effacb;
   }
   body .boeingSvg {
     background-image: url("/images/boeing_logo.png");
@@ -6547,7 +6626,7 @@ button.close {
     margin-right: -10px;
   }
   body div.row .thumbnail {
-    background-color: #bbbbbb;
+    background-color: #766a5b;
   }
   body div.row .thumbnail img {
     height: 200px;
@@ -6557,8 +6636,23 @@ button.close {
   body div.row .thumbnail img:nth-child(1) {
     background-color: white;
   }
+  body div.row .thumbnail h3,
+  body div.row .thumbnail p,
+  body div.row .thumbnail a {
+    color: white;
+  }
+  body div.row .thumbnail p a {
+    font-weight: bolder;
+  }
 }
 @media (min-width: 768px) {
+  body .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+    margin-right: -15px;
+    margin-left: 10px;
+  }
   body .boeingSvg {
     background-image: url("/images/boeing_logo.png");
     background-repeat: none;
@@ -6581,7 +6675,7 @@ button.close {
     margin-left: -21px;
   }
   body div.row .thumbnail {
-    background-color: #bbbbbb;
+    background-color: #766a5b;
     height: 400px;
   }
   body div.row .thumbnail img {
@@ -6591,6 +6685,14 @@ button.close {
   }
   body div.row .thumbnail img:nth-child(1) {
     background-color: white;
+  }
+  body div.row .thumbnail h3,
+  body div.row .thumbnail p,
+  body div.row .thumbnail a {
+    color: white;
+  }
+  body div.row .thumbnail p a {
+    font-weight: bolder;
   }
 }
 /* deprecated: @screen-tablet, or @screen-sm */
@@ -6603,6 +6705,9 @@ button.close {
     padding: 0px;
     margin-top: 13px;
   }
+  body .navbar {
+    height: 60px;
+  }
   body .boeingSvg {
     background-image: url("/images/boeing_logo.png");
     background-repeat: none;
@@ -6611,6 +6716,7 @@ button.close {
     width: 30px;
     display: inline-block;
     margin-right: 5px;
+    margin-left: 20px;
     margin-bottom: -12px;
   }
   body a span.paragraph {
@@ -6620,6 +6726,7 @@ button.close {
   body .jumbotron {
     margin-bottom: 0px;
     border-radius: 0px;
+    margin-top: 20px;
   }
   body .jumbotron p a {
     background-color: #777777;
@@ -6637,17 +6744,37 @@ button.close {
     max-width: 1200px;
     border-radius: 6px;
   }
+  body div.row {
+    margin-top: -100px;
+  }
   body div.row .thumbnail {
-    background-color: #bbbbbb;
-    height: 400px;
+    background-color: #766a5b;
+    height: 460px;
+  }
+  body div.row .thumbnail h3 {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: white;
   }
   body div.row .thumbnail img {
     height: 200px;
     width: 200px;
     border: solid black 3px;
+    margin-top: 20px;
   }
   body div.row .thumbnail img:nth-child(1) {
     background-color: white;
+  }
+  body div.row .thumbnail .description {
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  body div.row .thumbnail p a {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bolder;
   }
 }
 /* deprecated: @screen-lg-desktop, or @screen-lg */

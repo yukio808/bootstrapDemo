@@ -1,11 +1,108 @@
 @import "../public/bower_components/bootstrap/less/bootstrap.less";
 
+@cnt: #766A5B;
+@bg: #CCCDA2;
+@mixine: #9ACAB0;
+@mixinw: #C2F0CF;
+@mixinq: #EFFACB;
+
+
+
 @borderpt1: #000000;
 @borderpt2: #777777;
+body{
+  background-color: @bg;
+  .navbar-default{
+    border-color: #544D4D;
+  }
+  .navbar-default .navbar-form {
+    border-color: #544D4D;
+  }
+  .navbar-default .navbar-nav > .open > a{
+    // padding: 0px;
+    border-radius: 0px;
+  }
+  .navbar-default .navbar-collapse{
+    border-color: #544D4D;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #544D4D;
+  }
+  .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+    background-color: lighten(@cnt, 13.5%);
+  }
+  .navbar-default .navbar-toggle .icon-bar{
+      background-color: @mixinq;
+  }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: lighten(@cnt, 13.5%);
+    color: #555555;
+  }
+  nav.navbar{
+    background-color: @cnt;
+    a{
+      border-radius: 6px;
+
+      span{ 
+        color: @mixinq;
+      }
+    }
+    ul.nav{
+      // padding: 10px;
+      // height: 40px;
+      li{
+        .dropdown-menu{
+          background-color: @cnt;
+        }
+        .divider{
+          background-color: @cnt;
+          margin: 0px;
+        }
+        a{ 
+          background-color: @cnt;
+          color: @mixinq;
+        }
+      }
+    }
+  }
+  .footer{
+    // height: 70px;
+    background-color: @cnt;
+    ul{
+      margin: 0px;
+      background-color: @cnt;
+      li{
+        display: inline-block;
+        a{
+          float: left;
+          padding-left: 5px;
+          padding-right: 5px;
+          color: white;
+          font-weight: bolder;
+        }
+      }
+    }
+  }
+  div.row{
+    .thumbnail{
+      border: solid @cnt 2px;
+      p{
+        a{
+          background-color: @mixine;
+          border: solid @mixine 2px;
+          color: black;
+        }
+      }
+    }
+  }
+}
 @media(max-width: @screen-xs-max){
   body{
     .paragraph{
       visibility: hidden;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+      color: @mixinq;
     }
     .boeingSvg{
       background-image: url("/images/boeing_logo.png");
@@ -23,7 +120,7 @@
     }
     div.row{
       .thumbnail{
-        background-color: #bbbbbb;
+        background-color: @cnt;
         // height: 400px;
         img{
           height: 200px;
@@ -33,12 +130,25 @@
         img:nth-child(1){
           background-color: white;
         }
+        h3, p, a{
+          color: white;
+        }
+        p a{
+          font-weight: bolder;
+        }
       }
     }
   }
 }
 @media(min-width: @screen-sm-min){
   body{
+    .navbar-form .form-control {
+      display: inline-block;
+      width: auto;
+      vertical-align: middle;
+      margin-right: -15px;
+      margin-left: 10px;
+    }
     .boeingSvg{
       background-image: url("/images/boeing_logo.png");
       background-repeat: none;
@@ -65,7 +175,7 @@
     }
     div.row{
       .thumbnail{
-        background-color: #bbbbbb;
+        background-color: @cnt;
         height: 400px;
         img{
           height: 200px;
@@ -74,6 +184,12 @@
         }
         img:nth-child(1){
           background-color: white;
+        }
+        h3, p, a{
+          color: white;
+        }
+        p a{
+          font-weight: bolder;
         }
       }
     }
@@ -89,6 +205,9 @@
       padding: 0px;
       margin-top: 13px;
     }
+    .navbar{
+      height: 60px;
+    }
     .boeingSvg{
       background-image: url("/images/boeing_logo.png");
       background-repeat: none;
@@ -97,6 +216,7 @@
       width: 30px;
       display: inline-block;
       margin-right: 5px;
+      margin-left: 20px;
       margin-bottom: -12px;
     }
     a span.paragraph{
@@ -106,6 +226,7 @@
     .jumbotron{
       margin-bottom: 0px;
       border-radius: 0px;
+      margin-top: 20px;
       p{
         a{
           background-color: @gray-light;
@@ -129,16 +250,38 @@
       }
     }
     div.row{
+      margin-top: -100px;
+      .paragraghtwo{
+
+      }
       .thumbnail{
-        background-color: #bbbbbb;
-        height: 400px;
+        background-color: @cnt;
+        height: 460px;
+        h3{
+          margin-right: 10px;
+          margin-left: 10px;
+          color: white;
+        }
         img{
           height: 200px;
           width: 200px;
           border: solid black 3px;
+          margin-top: 20px;
         }
         img:nth-child(1){
           background-color: white;
+        }
+        .description{
+          margin-right: 10px;
+          margin-left: 10px;
+          font-size: 16px;
+          color: white;
+        }
+        p a{
+          margin-left: 10px;
+          margin-right: 10px;
+          font-weight: bolder;
+          // color: white;
         }
       }
     }
